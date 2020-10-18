@@ -15,4 +15,3 @@ script:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push dragma/simple-node
-  - echo "Pushed to docker hub"
